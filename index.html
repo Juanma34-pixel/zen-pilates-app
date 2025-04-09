@@ -7,12 +7,46 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <div id="login-screen" class="screen">
     <h1>Zen Pilates</h1>
-  </header>
-  <main>
-    <div id="app">¡Bienvenido a Zen Pilates!</div>
-  </main>
+    <p>Selecciona tu usuario:</p>
+    <select id="user-select">
+      <option value="">--Selecciona--</option>
+      <option value="barbi">Barbi (Dueña)</option>
+      <option value="luna">Luna (Profesora)</option>
+      <option value="iara">Iara (Profesora)</option>
+      <option value="mica">Mica (Profesora)</option>
+    </select>
+    <button id="login-btn">Entrar</button>
+  </div>
+
+  <div id="app-screen" class="screen hidden">
+    <header>
+      <h1>Zen Pilates</h1>
+      <button id="logout-btn">Cerrar sesión</button>
+    </header>
+    <main>
+      <div id="welcome"></div>
+      <button id="new-class-btn">Crear nueva clase</button>
+      <div id="class-form" class="hidden">
+        <h2>Crear Clase</h2>
+        <label>Título: <input type="text" id="class-title"></label>
+        <fieldset id="exercises-fieldset">
+          <legend>Selecciona entre 5 y 7 ejercicios:</legend>
+          <label><input type="checkbox" value="reformer"> Reformer</label>
+          <label><input type="checkbox" value="trapeze_table"> Trapecio con cama</label>
+          <label><input type="checkbox" value="chair"> Chair</label>
+          <label><input type="checkbox" value="barrel"> Barrel</label>
+          <label><input type="checkbox" value="mat"> Colchoneta (piso)</label>
+          <label><input type="checkbox" value="wall_bar"> Barra de pared</label>
+        </fieldset>
+        <button id="save-class-btn">Guardar Clase</button>
+      </div>
+      <h2>Tus Clases</h2>
+      <ul id="class-list"></ul>
+    </main>
+  </div>
+
   <script src="app.js"></script>
 </body>
 </html>
