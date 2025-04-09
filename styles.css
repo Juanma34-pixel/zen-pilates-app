@@ -1,19 +1,67 @@
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
 }
-
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: #8A2BE2;
+  color: white;
   padding: 1rem;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-#app {
+h1 {
+  margin: 0;
+}
+.screen {
   padding: 2rem;
   text-align: center;
-  font-size: 1.2rem;
+}
+.hidden {
+  display: none;
+}
+button, select, input[type="text"] {
+  font-size: 1rem;
+}
+#login-btn, #new-class-btn, #logout-btn, #save-class-btn {
+  background-color: #8A2BE2;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+#class-form {
+  background-color: white;
+  border: 1px solid #D8BFD8;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  max-width: 400px;
+  margin: 1rem auto;
+  text-align: left;
+}
+fieldset {
+  border: 1px solid #D8BFD8;
+  padding: 1rem;
+}
+legend {
+  font-weight: bold;
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+#class-list {
+  list-style: none;
+  padding: 0;
+}
+#class-list li {
+  background-color: white;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: 1px solid #D8BFD8;
+  border-radius: 0.5rem;
+  text-align: left;
 }
